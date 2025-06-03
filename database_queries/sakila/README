@@ -11,6 +11,8 @@
 >
 >`sakila-data.sql` → Inserta los datos en las tablas.
 
+Aquí puedes acceder al archivo sql donde están todos estos ejercicios: [sakila_exercises.sql](sakila_exercises.sql)
+
 ## EJERCICIOS SIMPLES
 
 **1. Obtener las películas alquiladas por un cliente específico.**

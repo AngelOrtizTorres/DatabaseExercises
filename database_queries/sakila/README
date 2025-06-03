@@ -16,25 +16,33 @@
 **1. Obtener las películas alquiladas por un cliente específico.**
 ```sql
 SELECT 
-    c.customer_id, c.first_name, c.last_name, f.title 
-FROM 
+    c.customer_id, c.first_name, c.last_name, f.title
+FROM
     rental r
-        JOIN 
+        JOIN
     customer c ON r.customer_id = c.customer_id
-        JOIN 
+        JOIN
     inventory i ON r.inventory_id = i.inventory_id
-        JOIN 
+        JOIN
     film f ON i.film_id = f.film_id
-WHERE 
-    customer.customer_id = 1;
+WHERE
+    c.customer_id = 1;
 ```
 **2. Ver los clientes registrados.**
 ```sql
-SELECT customer_id, first_name, last_name FROM customer LIMIT 5;
+SELECT 
+    customer_id, first_name, last_name
+FROM
+    customer
+LIMIT 5;
 ```
 **3. Ver las primeras películas disponibles**
 ```sql
-SELECT * FROM film LIMIT 10;
+SELECT 
+    *
+FROM
+    film
+LIMIT 10;
 ```
 **4. Cuántas tablas hay en la base de datos**
 ```sql
@@ -53,33 +61,35 @@ FROM
     information_schema.key_column_usage
 WHERE
     table_schema = 'sakila'
-    AND referenced_table_name IS NOT NULL;
+        AND referenced_table_name IS NOT NULL;
 ```
 **6. ¿Cuántas películas hay en la tabla film?**
 ```sql
-SELECT COUNT(*) FROM films;
+SELECT 
+    COUNT(*)
+FROM
+    film;
 ```
 **7. ¿Cuántos clientes hay en la base de datos?**
 ```sql
-SELECT COUNT(*) FROM customer;
+SELECT 
+    COUNT(*)
+FROM
+    customer;
 ```
 **8. Encuentra las 5 películas más alquiladas.**
 ```sql
 SELECT 
-    f.title,
-    COUNT(*) AS rentals
+    f.title, COUNT(*) AS rentals
 FROM
     rental r
-    JOIN
+        JOIN
     inventory i ON r.inventory_id = i.inventory_id
-    JOIN
+        JOIN
     film f ON i.film_id = f.film_id
-GROUP BY
-    f.title
-ORDER BY
-    rentals DESC
-LIMIT
-    5;
+GROUP BY f.title
+ORDER BY rentals DESC
+LIMIT 5;
 ```
 
 ## EJERCICIOS MULTITABLAS
@@ -140,10 +150,8 @@ SELECT
     f.title
 FROM
     film f
-        JOIN
-    film_category fc ON f.film_id = fc.film_id
-        JOIN
-    category c ON fc.category_id = c.category_id
+    JOIN film_category fc ON f.film_id = fc.film_id
+    JOIN category c ON fc.category_id = c.category_id
 WHERE
     c.name = 'Comedy';
 ```
@@ -153,13 +161,11 @@ SELECT
     f.title, f.rental_duration
 FROM
     film f
-        JOIN
-    film_category fc ON f.film_id = fc.film_id
-        JOIN
-    category c ON fc.category_id = c.category_id
+    JOIN film_category fc ON f.film_id = fc.film_id
+    JOIN category c ON fc.category_id = c.category_id
 WHERE
     c.name = 'Action'
-        AND f.rental_duration > 5;
+    AND f.rental_duration > 5;
 ```
 **8. Lista todas las películas de las categorías "Horror", "Drama" y "Documentary" (sin usar IN).**
 ```sql
@@ -191,7 +197,7 @@ WHERE
 **10. Lista las películas y su duración de alquiler, cuyo idioma termine con la letra "h".**
 ```sql
 SELECT 
-    f.title, f.rental_duration -- , l.name
+    f.title, f.rental_duration
 FROM
     film f
         JOIN

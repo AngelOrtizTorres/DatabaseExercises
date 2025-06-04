@@ -351,7 +351,7 @@ WHERE
 
 -- 10. Productos de fabricantes cuyo nombre termina en vocal 'e'.
 SELECT 
-    p.nombre, p.precio -- , f.nombre
+    p.nombre, p.precio, f.nombre
 FROM
     producto p
         JOIN
@@ -361,7 +361,7 @@ WHERE
 
 -- 11. Productos de fabricantes que contienen la letra 'w' en su nombre.
 SELECT 
-    p.nombre, p.precio -- , f.nombre
+    p.nombre, p.precio, f.nombre
 FROM
     producto p
         JOIN

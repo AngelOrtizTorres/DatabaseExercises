@@ -6,3 +6,5 @@
 **Ejercicios sobre la BBDD de Sakila:** [CLICK AQUÍ](sakila/README.md)
 
 **Ejercicios sobre una BBDD sobre una tienda informática:** [CLICK AQUÍ](computer_shop/README.md)
+
+**Ejercicios sobre consultas externas:** [CLICK AQUÍ](external_queries/README.md)

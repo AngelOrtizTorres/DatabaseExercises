@@ -8,3 +8,5 @@
 **Ejercicios sobre una BBDD sobre una tienda informática:** [CLICK AQUÍ](computer_shop/README.md)
 
 **Ejercicios sobre consultas externas:** [CLICK AQUÍ](external_queries/README.md)
+
+**Ejercicios sobre subconsultas:** [CLICK AQUÍ](subqueries/README.md)

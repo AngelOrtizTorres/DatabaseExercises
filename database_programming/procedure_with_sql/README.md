@@ -1,8 +1,8 @@
 # Procedimientos con sentencias SQL
 
-[ARCHIVO SQL](procedure_with_sql.sql)
+Aquí puedes acceder al archivo sql donde están todos estos ejercicios: [procedure_with_sql](procedure_with_sql.sql)
 
-[BBDD](bbdd_procedure.sql)
+Descargar archivo sql con la BBDD: [CLICK AQUÍ](bbdd_procedure.sql)
 
 **1. Escribe un procedimiento que reciba el nombre de un país como parámetro de entrada y realice una consulta sobre la tabla cliente para obtener todos los clientes que existen en la tabla de ese país.**
 

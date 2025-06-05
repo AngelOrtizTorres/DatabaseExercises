@@ -1,4 +1,4 @@
--- A6. Funciones con sentencias SQL
+-- Funciones con sentencias SQL
 
 USE tienda_funciones;
 

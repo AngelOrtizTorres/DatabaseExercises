@@ -1,4 +1,4 @@
-# A9. Triggers
+# Triggers
 
 Aquí puedes acceder al archivo sql donde está el ejercicio 1: [ARCHIVO EJERCICIO 1](triggers.sql)
 

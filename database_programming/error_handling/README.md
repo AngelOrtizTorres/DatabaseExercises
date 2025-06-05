@@ -1,4 +1,4 @@
-# A7. Manejo de errores en MySQL
+# Manejo de errores en MySQL
 
 Aquí puedes acceder al archivo sql donde están todos estos ejercicios: [ARCHIVO SQL](error_handling.sql)
 

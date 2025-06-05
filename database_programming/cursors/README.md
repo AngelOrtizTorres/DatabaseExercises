@@ -1,4 +1,4 @@
-# A8. Cursores
+# Cursores
 
 Aquí puedes acceder al archivo sql donde están todos estos ejercicios: [EJERCICIOS CURSORES](cursors.sql)
 
